@@ -29,10 +29,10 @@ System.register(['angular2/core', './mock-heroes'], function(exports_1, context_
                 };
                 HeroService.prototype.getHeroesSlowly = function () {
                     return new Promise(function (resolve) {
-                        return setTimeout(function () { return resolve(mock_heroes_1.HEROES); }, 2000);
-                    } // Will resolve after 2 seconds. Simulate a server response time
-                     // Will resolve after 2 seconds. Simulate a server response time
-                    );
+                        return setTimeout(function () { return resolve(mock_heroes_1.HEROES); }, 1500);
+                    } // Will resolve after 1.5 seconds. Simulate a server response time
+                     // Will resolve after 1.5 seconds. Simulate a server response time
+                    ); // We should aspire to make some loading spinner when waiting on server requests.
                 };
                 HeroService = __decorate([
                     core_1.Injectable(), 
