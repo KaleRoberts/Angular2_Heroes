@@ -9,13 +9,14 @@ import {DashboardComponent} from './dashboard.component';
 @Component({
   selector: 'my-app',
   template: `
-    <h2>{{title}}</h2>
+    <h1>{{title}}</h1>
     <nav>
       <a [routerLink]="['Heroes']">Heroes</a>
       <a [routerLink]="['Dashboard']">Dashboard</a>
     </nav>
     <router-outlet></router-outlet>
   `,
+  styleUrls: ['app/app.component.css'],
   directives: [
     ROUTER_DIRECTIVES
   ],
